@@ -3,7 +3,7 @@
 
 ## Create a module.tf  and put the codes 
 ```
-module "app1" {
+
   region           = "us-east-1"
   key_name         = "asg-key-pair"                    #It will be created
   image_owner      = "849821742851"                    #137112412989
@@ -27,7 +27,7 @@ tags    =   {
     Team                    =   "DevOps"
     Department              =   "IT"
    }
-}
+
 
 # module "vpc" {
 #   source  = "terraform-aws-modules/vpc/aws"
