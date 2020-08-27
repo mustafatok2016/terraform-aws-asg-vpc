@@ -3,6 +3,9 @@
 
 ## Create a module.tf  and put the codes 
 ```
+module "asg-vpc" {
+  source  = "mustafatok2016/asg-vpc/aws"
+  version = "1.1.0"
 
   region           = "us-east-1"
   key_name         = "asg-key-pair"                    #It will be created
@@ -27,7 +30,7 @@ tags    =   {
     Team                    =   "DevOps"
     Department              =   "IT"
    }
-
+}
 
 # module "vpc" {
 #   source  = "terraform-aws-modules/vpc/aws"
