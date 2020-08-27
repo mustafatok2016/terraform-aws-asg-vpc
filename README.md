@@ -1,7 +1,9 @@
 ### terraform-aws-asg-vpc
+
+
+## Create a module.tf  and put the codes 
 ```
 module "app1" {
-  source           = "class4"
   region           = "us-east-1"
   key_name         = "asg-key-pair"                    #It will be created
   image_owner      = "849821742851"                    #137112412989
